@@ -36,7 +36,7 @@ class SecurityBot : TelegramLongPollingBot() {
     }
 
     override fun getBotToken(): String {
-        return "YOUR_BOT_TOKEN"
+        return "";
     }
 
     override fun onUpdateReceived(update: Update) {
@@ -48,8 +48,8 @@ class SecurityBot : TelegramLongPollingBot() {
             val userId = message.from.id.toString()
             val timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"))
 
-            val securityChatId = "SECURITY_CHAT_ID"
-            val loggingChatId = "LOGGING_CHAT_ID"
+            val securityChatId = ""
+            val loggingChatId = ""
 
             if (chatId != securityChatId && chatId != loggingChatId) {
 
